@@ -1,0 +1,8 @@
+/* styles/Navbar.css */
+
+/* Contoh aturan CSS */
+@media (max-width: 280px) {
+  .hidden-on-small-screen {
+    display: none;
+  }
+}
