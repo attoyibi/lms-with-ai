@@ -27,13 +27,13 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a>Item 111</a>
             </li>
             <li>
               <a>Parent</a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Submenu 11</a>
                 </li>
                 <li>
                   <a>Submenu 2</a>
@@ -83,10 +83,10 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg me-2">
+        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
           Book a demo
         </a>
-        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Get started</a>
+        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Get started</a>
       </div>
     </div>
   );
