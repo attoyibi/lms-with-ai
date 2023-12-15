@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+User Front end : [Uploading material-dashboard-tailwind.zip…]()
+
+Admin Front end : [landwind-1.0.0.zip](https://github.com/attoyibi/lms-with-ai/files/13684890/landwind-1.0.0.zip)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
