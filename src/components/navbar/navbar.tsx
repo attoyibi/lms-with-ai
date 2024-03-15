@@ -1,7 +1,12 @@
+'use client'
 import "tailwindcss/tailwind.css"; // Import Tailwind CSS
 import Image from "next/image";
 import styles from "./navbar.module.css"; //
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 export default function Navbar() {
+  const router = useRouter()
+
   return (
     <div className="navbar bg-base-100 ">
       <div className="navbar-start">
@@ -86,7 +91,7 @@ export default function Navbar() {
         <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
           Book a demo
         </a>
-        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Get started</a>
+        <a onClick={() => router.push('/login')} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Login</a>
       </div>
     </div>
   );
