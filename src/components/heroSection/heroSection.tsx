@@ -6,7 +6,7 @@ function redirectToYouTube() {
 }
 const HeroSection = () => {
   return (
-    <div className=" flex flex-col md:flex-row lg:flex-row">
+    <div className="flex flex-col md:flex-row lg:flex-row mb-10">
       <div className="md:w-1/2 lg:w-1/2 md:flex-col lg:flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start">
         <p className="mt-10 font-bold text-sm sm:text-lg lg:text-5xl">
           An LMS solution to your
@@ -20,7 +20,7 @@ const HeroSection = () => {
         </p>
         <div className="mt-5 flex flex-col md:flex-row lg:flex-row">
           <button
-            className="shadow-md bg-red-500 text-white hover:bg-red-600 hover:text-white py-2 px-4 rounded mb-2 md:mb-0 lg:mb-0 md:mr-2 lg:mr-2"
+            className="shadow-md bg-red-500 text-white hover:bg-red-600 hover:text-white py-1 px-3 rounded mb-2 md:mb-0 lg:mb-0 md:mr-2 lg:mr-2 "
             onClick={() => {
               // Handle button click event here
             }}
