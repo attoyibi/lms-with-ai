@@ -8,6 +8,8 @@ export default function Navbar() {
   const router = useRouter()
 
   return (
+
+    
     <div className="navbar bg-base-100 ">
       <div className="navbar-start">
         <div className="dropdown">
@@ -64,7 +66,7 @@ export default function Navbar() {
           </p>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      {/* <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a>Item 1</a>
@@ -86,10 +88,10 @@ export default function Navbar() {
             <a>Item 3</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="navbar-end">
-        <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
-          Book a demo
+        <a onClick={() => router.push('/assessment')} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
+          Try Assessment
         </a>
         <a onClick={() => router.push('/login')} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Login</a>
       </div>
