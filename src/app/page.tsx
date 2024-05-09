@@ -4,44 +4,6 @@ import VideoList from '@/components/videoList/videoList';
 import Navbar from '@/components/navbar/navbar';
 import { createClient } from '@supabase/supabase-js';
 import supabase from '@/lib/supabase';
-const courses = [
-	{
-		id: 1,
-		title: 'Introduction to Web Development',
-		description: 'Learn the basics of web development using HTML, CSS, and JavaScript.',
-		level: 'Beginner',
-		duration: '4 weeks',
-		imageUrl: '' // Assuming image is in the 'images' folder
-	},
-	{
-		id: 2,
-		title: 'React.js Fundamentals',
-		description: 'Master the fundamentals of React.js and build interactive web applications.',
-		level: 'Intermediate',
-		duration: '6 weeks'
-	},
-	{
-		id: 3,
-		title: 'Node.js and Express.js for Backend Development',
-		description: 'Explore backend development with Node.js and Express.js.',
-		level: 'Intermediate',
-		duration: '8 weeks'
-	},
-	{
-		id: 4,
-		title: 'Advanced JavaScript Concepts',
-		description: 'Dive deep into advanced JavaScript concepts such as closures, promises, and async/await.',
-		level: 'Advanced',
-		duration: '5 weeks'
-	},
-	{
-		id: 5,
-		title: '6',
-		description: 'Dive deep into advanced JavaScript concepts such as closures, promises, and async/await.',
-		level: 'Advanced',
-		duration: '6 weeks'
-	}
-];
 
 export default function Home() {
 	return (
@@ -50,7 +12,7 @@ export default function Home() {
 			{/* Konten lainnya */}
 			<div className="px-7 md:px-7 lg:px-7 container mx-auto max-w-screen-xl sm:overflow-x-hidden">
 				<HeroSection />
-				<CourseList courses={courses} />
+				<CourseList />
 				{/* <VideoList /> */}
 			</div>
 			<div className="mt-8 text-center bg-gray-100 py-6 ">
