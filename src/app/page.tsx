@@ -12,7 +12,7 @@ export default function Home() {
 			{/* Konten lainnya */}
 			<div className="px-7 md:px-7 lg:px-7 container mx-auto max-w-screen-xl sm:overflow-x-hidden">
 				<HeroSection />
-				{/* <CourseList /> */}
+				<CourseList />
 				{/* <VideoList /> */}
 			</div>
 			<div className="mt-8 text-center bg-gray-100 py-6 ">
