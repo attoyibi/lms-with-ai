@@ -23,7 +23,7 @@ export default function Login() {
 		event.preventDefault();
 
 		try {
-			const result:any = await signIn(email, password);
+			const result:any = await signIn({email, password});
 
 			if (result && result.error) {
 				alert(`An error occurred: ${result.error.message}`);
