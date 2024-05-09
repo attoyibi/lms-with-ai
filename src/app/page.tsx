@@ -4,7 +4,7 @@ import VideoList from '@/components/videoList/videoList';
 import Navbar from '@/components/navbar/navbar';
 import { createClient } from '@supabase/supabase-js';
 import supabase from '@/lib/supabase';
-export const courses = [
+const courses = [
 	{
 		id: 1,
 		title: 'Introduction to Web Development',
@@ -51,7 +51,6 @@ export default function Home() {
 			<div className="px-7 md:px-7 lg:px-7 container mx-auto max-w-screen-xl sm:overflow-x-hidden">
 				<HeroSection />
 				<CourseList courses={courses} />
-
 				{/* <VideoList /> */}
 			</div>
 			<div className="mt-8 text-center bg-gray-100 py-6 ">
