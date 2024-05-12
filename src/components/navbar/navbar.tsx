@@ -52,42 +52,26 @@ export default function Navbar() {
 								</li>
 							</ul>
 						</div>
-						<div className="flex items-center">
+						<div className="flex items-center" onClick={() => router.push('/')} style={{ cursor: 'pointer' }}>
 							<Image
-								src="/assets/images/robot.png" // Make sure the path is correct
+								src="/assets/images/robot.png" // Pastikan path-nya benar
 								alt="Logo"
 								width={25}
 								height={25}
 								className={`mr-2 w-6 h-6 sm:w-12 sm:h-12 ${styles['hidden-on-small-screen']}`} // Tambahkan kelas CSS
-							/>
 
+							/>
 							<p className="items-center normal-case text-xl hidden sm:block">LMS Sinau</p>
+
 						</div>
 					</div>
-					{/* <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
-      </div> */}
 					<div className="navbar-end">
+						<a
+							onClick={() => router.push('/assignments')}
+							className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2"
+						>
+							Assignments
+						</a>
 						<a
 							onClick={() => router.push('/assessment')}
 							className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2"

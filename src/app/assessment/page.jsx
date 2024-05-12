@@ -1,10 +1,11 @@
 import React from 'react';
 import Training from './TrainingForm';
 import Navbar from '../../components/navbar/navbar';
+import Footer from '../../components/footerSection/footerSection';
 export default function page() {
 	return (
     <>
-    
+    <Navbar />
 		<div className="max-w-screen-sm mx-auto mt-5">
 			<h1 className="text-4xl flex justify-center text-center">Form Pendaftaran Pelatihan</h1>
 			<h1 className="text-1xl mb-4 mt-2">
@@ -14,6 +15,7 @@ export default function page() {
 			</h1>
 			<Training />
 		</div>
+		<Footer />
     </>
 	);
 }

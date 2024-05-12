@@ -4,7 +4,10 @@ interface TitleProps {
 }
 // Komponen untuk menampilkan judul
 function Title({ text }: TitleProps) {
-	return <h1 className="text-2xl font-bold mb-4">{text}</h1>;
+	return <div className="text-center">
+	<h1 className="text-3xl font-bold mb-4">{text}</h1>
+	<p className="mb-8">Experience seamless integration and enhanced productivity with our meticulously crafted feature set.</p>
+	</div>
 }
 
 export default function CourseList() {
@@ -50,9 +53,9 @@ export default function CourseList() {
 	];
 	const limitedCourses = courses.slice(0, 4);
 	return (
-		<div>
-			<Title text="Course List" /> {/* Menampilkan judul */}
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:p-2">
+		<div className="lg:pt-10 min-h-screen">
+			<Title text="Discover the Power of Our Feature Set" /> {/* Menampilkan judul */}
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:p-2 ">
 				{limitedCourses.map((course) => (
 					<a
 						key={course.id}
@@ -60,15 +63,19 @@ export default function CourseList() {
 						className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
 					>
 						{/* <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"  src="/assets/images/hero_images.png" alt=""/> */}
-						<div className="flex flex-col justify-between p-4 leading-normal">
-							<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-								{course.title}
-							</h5>
-							<p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{course.description}</p>
-							<div className="flex justify-between items-center">
-								<span className="text-gray-500">{course.level}</span>
-								<span className="text-gray-500">{course.duration}</span>
+						<div className="card w-96 bg-base-100 shadow-sm">
+						<figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+						<div className="card-body">
+							<h2 className="card-title">
+							Shoes!
+							{course.id == 1 && <div className="badge badge-secondary">NEW</div>}
+							</h2>
+							<p>If a dog chews shoes whose shoes does he choose?</p>
+							<div className="card-actions justify-end">
+							<div className="badge badge-outline">Fashion</div> 
+							<div className="badge badge-outline">Products</div>
 							</div>
+						</div>
 						</div>
 					</a>
 				))}
