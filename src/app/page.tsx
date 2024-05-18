@@ -7,16 +7,20 @@ import supabase from '@/lib/supabase';
 import Footer from "../components/footerSection/footerSection"
 import SubmitForm from '@/components/submitForm/SubmitForm';
 import HeroSectionDaisy from '@/components/heroSection/heroSectionDaisy';
+// import Cart from '@/components/card/Card';
+
+
 export default function Home() {
 	return (
 		<div className="sm:overflow-x-hidden">
+			{/* <Cart /> */}
 			<Navbar />
 			{/* Konten lainnya */}
 			<div className="px-7 md:px-7 lg:px-7 container mx-auto max-w-screen-xl sm:overflow-x-hidden">
 				<HeroSection />
 				<HeroSectionDaisy />
 				<CourseList />
-				<SubmitForm />.
+				<SubmitForm />
 				{/* <VideoList /> */}
 			</div>
 			<div className="mt-8 text-center bg-gray-100 py-6">
