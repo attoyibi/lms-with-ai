@@ -21,7 +21,7 @@ export default function Home() {
 				<HeroSectionDaisy />
 				<CourseList />
 				<SubmitForm />
-				{/* <VideoList /> */}
+				<VideoList />
 			</div>
 			<div className="mt-8 text-center bg-gray-100 py-6">
 				<p className="text-gray-800 text-lg">Explore endless possibilities and connect with me on:</p>
