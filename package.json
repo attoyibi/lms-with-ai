@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "scripts": {
     "dev": "next dev",
@@ -15,15 +15,15 @@
     "@prisma/client": "^5.14.0",
     "@supabase/supabase-js": "^2.39.1",
     "@vercel/postgres": "^0.8.0",
-    "next": "13.5.4",
+    "next": "^14.2.3",
     "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "speedtest-net": "^2.2.0",
+    "speedtest-net": "^1.6.2",
     "uuid": "^9.0.1",
-    "vercel": "^34.1.11"
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
