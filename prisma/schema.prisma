@@ -23,3 +23,23 @@ model Post {
   userId    Int
 }
 
+
+model Course {
+  id          String      @default(cuid()) @id
+  title       String
+  description String?
+   topics      Topic[]
+}
+
+model Topic {
+  id                String   @default(cuid()) @id
+  title             String
+  description       String?
+  courseId          String
+  essayQuestion     String
+  answerKey         String
+  evaluationCriteria String
+  course            Course     @relation(fields: [courseId], references: [id])
+}
+
+
