@@ -1,10 +1,10 @@
 import HeroSection from "@/components/heroSection/heroSection";
 import CourseList from "@/components/courseList/courseList";
 import VideoList from "@/components/videoList/videoList";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "../components/navbar/Navbar";
 import { createClient } from "@supabase/supabase-js";
 import supabase from "@/lib/supabase";
-import Footer from "../components/footerSection/footerSection";
+import Footer from "@/components/footerSection/footerSection";
 import SubmitForm from "@/components/submitForm/SubmitForm";
 import HeroSectionDaisy from "@/components/heroSection/heroSectionDaisy";
 // import Cart from '@/components/card/Card';
@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className="sm:overflow-x-hidden">
       {/* <Cart /> */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* Konten lainnya */}
       <div className="px-7 md:px-7 lg:px-7 container mx-auto max-w-screen-xl sm:overflow-x-hidden">
-        {/* <HeroSection />
-				<HeroSectionDaisy />
-				<CourseList />
-				<SubmitForm /> */}
-        {/* <VideoList /> */}
+        <HeroSection />
+        <HeroSectionDaisy />
+        <CourseList />
+        <SubmitForm />
+        <VideoList />
       </div>
       <div className="mt-8 text-center bg-gray-100 py-6">
         <p className="text-gray-800 text-lg">

@@ -3,7 +3,7 @@
 import useSignIn from "@/hooks/useSignIn";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Login() {
   // const router = useRouter();

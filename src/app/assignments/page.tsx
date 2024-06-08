@@ -1,11 +1,12 @@
 import React from "react";
 
-import Navbar from "../../components/navbar/navbar";
+import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footerSection/footerSection";
+import TrainingFormAssignments from "../../components/assignments/TrainingFormAssignments";
 export default function page() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="max-w-screen-sm mx-auto mt-5">
         <h1 className="text-4xl flex justify-center text-center">
           Form Pengumpulan Tugas
@@ -16,8 +17,8 @@ export default function page() {
           mengevaluasi tugas temen-temen.
         </p>
       </div>
-      {/* <TrainingFormAssignments /> */}
-      {/* <Footer /> */}
+      <TrainingFormAssignments />
+      <Footer />
     </>
   );
 }

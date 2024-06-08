@@ -1,7 +1,11 @@
+import Navbar from "@/components/navbar/Navbar";
+import Training from "@/components/assessments/TrainingForm";
+import Footer from "@/components/footerSection/footerSection";
+
 export default function page() {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <>
+      <Navbar />
       <div className="max-w-screen-sm mx-auto mt-5">
         <h1 className="text-4xl flex justify-center text-center">
           Form Pendaftaran Pelatihan
@@ -11,9 +15,9 @@ export default function page() {
           <br /> <b>Setiap tindakan</b> pada pengisian form akan{" "}
           <b> dijadikan perhitungan </b>untuk penerimaan pelatihan
         </h1>
-        {/* <Training /> */}
+        <Training />
       </div>
-      {/* <Footer /> */}
-    </div>
+      <Footer />
+    </>
   );
 }
