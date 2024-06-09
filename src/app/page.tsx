@@ -1,13 +1,14 @@
 import HeroSection from "@/components/heroSection/heroSection";
 import CourseList from "@/components/courseList/courseList";
 import VideoList from "@/components/videoList/videoList";
-import Navbar from "@/components/navbar/navbar";
+
 import { createClient } from "@supabase/supabase-js";
 import supabase from "@/lib/supabase";
 import Footer from "@/components/footerSection/footerSection";
 import SubmitForm from "@/components/submitForm/SubmitForm";
 import HeroSectionDaisy from "@/components/heroSection/heroSectionDaisy";
-// import Cart from '@/components/card/Card';
+import Navbar from "@/components/navbar/Navbar";
+
 
 export default function Home() {
   return (
