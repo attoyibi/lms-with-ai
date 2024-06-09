@@ -1,10 +1,11 @@
+import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Training from "@/components/assessments/TrainingForm";
 import Footer from "@/components/footerSection/footerSection";
 
 export default function page() {
   return (
-    <>
+    <div>
       <Navbar />
       <div className="max-w-screen-sm mx-auto mt-5">
         <h1 className="text-4xl flex justify-center text-center">
@@ -18,6 +19,6 @@ export default function page() {
         <Training />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
