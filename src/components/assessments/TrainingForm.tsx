@@ -4,7 +4,7 @@ import ToolsDetection from "./ToolsDetection";
 import PersonalInformation from "./PersonalInformation";
 import { useTabManagement } from "@/hooks/useTabManagement";
 
-export default function Home() {
+export default function TrainingForm() {
   const [activeTab, setActiveTab] = useState(0);
   // const { activeTab, handleTabChange } = useTabManagement();
   const handleTabChange = (index: any) => {
