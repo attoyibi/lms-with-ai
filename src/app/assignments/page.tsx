@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footerSection/footerSection";
 import TrainingFormAssignments from "@/components/assignments/TrainingFormAssignments";
-export default function page() {
+export default function Assignments() {
   return (
     <>
       <Navbar />

@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Training from "@/components/assessments/TrainingForm";
 import Footer from "@/components/footerSection/footerSection";
 
-export default function page() {
+export default function Assessment() {
   return (
     <div>
       <Navbar />
