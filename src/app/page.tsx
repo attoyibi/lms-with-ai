@@ -9,7 +9,6 @@ import SubmitForm from "@/components/submitForm/SubmitForm";
 import HeroSectionDaisy from "@/components/heroSection/heroSectionDaisy";
 import Navbar from "@/components/navbar/Navbar";
 
-
 export default function Home() {
   return (
     <div className="sm:overflow-x-hidden">

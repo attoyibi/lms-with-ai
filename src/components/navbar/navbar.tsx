@@ -1,11 +1,9 @@
-"use client";
+import React, { LabelHTMLAttributes } from "react";
 import Image from "next/image";
-import styles from "./navbar.module.css"; //
-import { useRouter } from "next/navigation";
+import styles from "./navbar.module.css";
 import Link from "next/link";
-export default function Navbar() {
-  const router = useRouter();
 
+export default function Navbar() {
   return (
     <main className="shadow-md">
       <div className="lg:px-7 max-w-screen-xl container mx-auto ">
@@ -51,46 +49,38 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
-            <div
-              className="flex items-center"
-              onClick={() => router.push("/")}
-              style={{ cursor: "pointer" }}
-            >
-              <Image
-                src="/assets/images/robot.png" // Pastikan path-nya benar
-                alt="Logo"
-                width={25}
-                height={25}
-                className={`mr-2 w-6 h-6 sm:w-12 sm:h-12 ${styles["hidden-on-small-screen"]}`} // Tambahkan kelas CSS
-              />
-              <p className="items-center normal-case text-xl hidden sm:block">
-                LMS Sinau
-              </p>
-            </div>
+            <Link href="/">
+              <div className="flex items-center" style={{ cursor: "pointer" }}>
+                <Image
+                  src="/assets/images/robot.png"
+                  alt="Logo"
+                  width={25}
+                  height={25}
+                  className={`mr-2 w-6 h-6 sm:w-12 sm:h-12 ${styles["hidden-on-small-screen"]}`}
+                />
+                <p className="items-center normal-case text-xl hidden sm:block">
+                  LMS Sinau
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="navbar-end">
-            <a
-              onClick={() => router.push("/assignments")}
-              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2"
-            >
-              Assignments
-            </a>
-            <a
-              onClick={() => router.push("/assessment")}
-              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2"
-            >
-              Try Assessment
-            </a>
-            <a
-              onClick={() => router.push("/login")}
-              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md"
-            >
-              Login
-            </a>
+            <Link href="/assignments">
+              <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
+                Assignments
+              </a>
+            </Link>
+            <Link href="/assessment">
+              <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md me-2">
+                Try Assessment
+              </a>
+            </Link>
+            <Link href="/login">
+              <a className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md">Login</a>
+            </Link>
           </div>
         </div>
       </div>
     </main>
   );
 }
-
