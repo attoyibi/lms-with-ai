@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footerSection/footerSection";
-import TrainingFormAssignments from "@/components/assignments/TrainingFormAssignments";
+// import TrainingFormAssignments from "@/components/assignments/TrainingFormAssignments";
 export default function Assignments() {
   return (
     <>
@@ -17,7 +17,7 @@ export default function Assignments() {
           mengevaluasi tugas temen-temen.
         </p>
       </div>
-      <TrainingFormAssignments />
+      {/* <TrainingFormAssignments /> */}
       <Footer />
     </>
   );
