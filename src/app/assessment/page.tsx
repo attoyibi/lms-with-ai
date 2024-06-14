@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-// import Training from "@/components/assessments/TrainingForm";
+import Training from "@/components/assessments/TrainingForm";
 import Footer from "@/components/footerSection/footerSection";
 
 export default function Assessment() {
@@ -16,7 +16,7 @@ export default function Assessment() {
           <br /> <b>Setiap tindakan</b> pada pengisian form akan{" "}
           <b> dijadikan perhitungan </b>untuk penerimaan pelatihan
         </h1>
-        {/* <Training /> */}
+        <Training />
       </div>
       <Footer />
     </div>
